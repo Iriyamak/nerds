@@ -20,7 +20,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, 
 		border-collapse: collapse;
 		border-spacing: 0;
 	}
-	td, td img {
+	td, td, img {
 		vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
 	}
 	input, select, button, textarea {
@@ -82,49 +82,18 @@ html {
 	}
 /* --------------- базовые настройки ---------*/
 h1{
-	font-size: 48px;
-	line-height: 48px;
+	font-size: 40px;
 }
-h2, b{
-	font-size: 30px;
-	line-height: 42px;
+h2 {
+	font-size: 36px;
+	line-height: 36px;
 }
-h3{
-	font-size: 24px;
-	line-height: 30px;
-}
-.main-header a{
+p{
 	font-size: 16px;
-	line-height: 20px;
+	line-height: 22px;
+	color:#283136;
 }
-shop text{
-	line-height: 18px;
-}
-header{
-	background-color: #000;
-}
-.features{
-	color: #fff;
-}
-.news-preview time{
-	color:#aba9a7;
-}
-header,
-footer{
-	color: #fff;
-}
-.deactive{
-	color:#aba9a7;
-}
-.components {
-	list-style-image: url(../img/item/feature-icon.png);
-}
-.btn{
-	color: #fff;
-	background-color: #000;
-	font-size: 14px;
-	line-height: 18px;
-}
-.btn:hover{
-	background-color: #663d15;
+b {
+	font-size: 18px;
+	line-height: 30px;
 }
