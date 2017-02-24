@@ -10,7 +10,7 @@
 <body>
   <header class="main-header">
     <div class="centerfix">
-      <div class="top-header">
+      <div class="header-top">
         <a href="index.html"><img src="img/nerds-logo.png" alt="главная"></a>
         <nav class="main-menu">
           <ul>
@@ -32,7 +32,7 @@
       <h1>Добро пожаловать в магазин готовых макетов</h1>
     </div>
   </header>
-  <main class="centerfix">
+  <main class="centerfix catalog">
     <aside>
       <form action="" method="post">
         <fieldset>
@@ -74,120 +74,124 @@
         <p>ПО ЦЕНЕ</p>
         <p>ПО ТИПУ</p>
         <p>ПО ФУНКЦИОНАЛУ</p>
-        <a class="arrow arrow-up" href="#">по возрастанию</a>
-        <a class="arrow arrow-down" href="#">по убыванию</a>
+        <p class="arrows">
+          <a class="arrow arrow-up" href="#">по возрастанию</a>
+          <a class="arrow arrow-down" href="#">по убыванию</a></p>
       </div>
-      <article class="item">
-        <div class="browser"></div>
-        <a href="#"><img src="img/catalog-item-1.jpg" alt=""></a>
-        <div class="hidden">
-          <h4><a href="#">AVIATOR</a></h4>
-          <p>Одностраничный макет <br> с авторским дизайном</p>
-          <button type="button" class="btn">8000 Р.</button>
-        </div>
-      </article>
-      <article class="item">
-        <div class="browser"></div>
-        <a href="#"><img src="img/catalog-item-2.jpg" alt=""></a>
-        <div class="hidden">
-          <h4><a href="#">Sunset</a></h4>
-          <p>Интернет-магазин <br>с личным кабинетом</p>
-          <button type="button" class="btn">10000 Р.</button>
-        </div>
-      </article>
-      <article class="item">
-        <div class="browser"></div>
-        <a href="#"><img src="img/catalog-item-3.jpg" alt=""></a>
-        <div class="hidden">
-          <h4><a href="#">FORTE</a></h4>
-          <p>Отличный макет <br>для личного блога</p>
-          <button type="button" class="btn">5000 Р.</button>
-        </div>
-      </article>
-      <article class="item">
-        <div class="browser"></div>
-        <a href="#"><img src="img/catalog-item-4.jpg" alt=""></a>
-        <div class="hidden">
-          <h4><a href="#">Modern Organic <br>THAI</a></h4>
-          <p>Сайт для ресторана <br>быстрого питания</p>
-          <button type="button" class="btn">12000 Р.</button>
-        </div>
-      </article>
-      <article class="item">
-        <div class="browser"></div>
-        <a href="#"><img src="img/catalog-item-5.jpg" alt=""></a>
-        <div class="hidden">
-          <h4><a href="#">AVENUE</a></h4>
-          <p>Макет для блога <br>о путешествиях</p>
-          <button type="button" class="btn">8000 Р.</button>
-        </div>
-      </article>
-      <article class="item">
-        <div class="browser"></div>
-        <a href="#"><img src="img/catalog-item-6.jpg" alt=""></a>
-        <div class="hidden">
-          <h4><a href="#">DOVETAIL</a></h4>
-          <p>Интернет-магазин <br>с галереей товаров</p>
-          <button type="button" class="btn">8000 Р.</button>
-        </div>
-      </article>
-      <article class="item">
-        <div class="browser"></div>
-        <a href="#"><img src="img/catalog-item-6.jpg" alt=""></a>
-        <div class="hidden">
-          <h4><a href="#">DOVETAIL</a></h4>
-          <p>Интернет-магазин <br>с галереей товаров</p>
-          <button type="button" class="btn">8000 Р.</button>
-        </div>
-      </article>
-      <article class="item">
-        <div class="browser"></div>
-        <a href="#"><img src="img/catalog-item-6.jpg" alt=""></a>
-        <div class="hidden">
-          <h4><a href="#">DOVETAIL</a></h4>
-          <p>Интернет-магазин <br>с галереей товаров</p>
-          <button type="button" class="btn">8000 Р.</button>
-        </div>
-      </article>
-      <article class="item">
-        <div class="browser"></div>
-        <a href="#"><img src="img/catalog-item-6.jpg" alt=""></a>
-        <div class="hidden">
-          <h4><a href="#">DOVETAIL</a></h4>
-          <p>Интернет-магазин <br>с галереей товаров</p>
-          <button type="button" class="btn">8000 Р.</button>
-        </div>
-      </article>
+      <div class="catalog-list">
+        <article class="item">
+          <div class="browser"></div>
+          <a href="#"><img src="img/catalog-item-1.jpg" alt=""></a>
+          <div class="hidden">
+            <h4><a href="#">AVIATOR</a></h4>
+            <p>Одностраничный макет <br> с авторским дизайном</p>
+            <button type="button" class="btn">8000 Р.</button>
+          </div>
+        </article>
+        <article class="item">
+          <div class="browser"></div>
+          <a href="#"><img src="img/catalog-item-2.jpg" alt=""></a>
+          <div class="hidden">
+            <h4><a href="#">Sunset</a></h4>
+            <p>Интернет-магазин <br>с личным кабинетом</p>
+            <button type="button" class="btn">10000 Р.</button>
+          </div>
+        </article>
+        <article class="item">
+          <div class="browser"></div>
+          <a href="#"><img src="img/catalog-item-3.jpg" alt=""></a>
+          <div class="hidden">
+            <h4><a href="#">FORTE</a></h4>
+            <p>Отличный макет <br>для личного блога</p>
+            <button type="button" class="btn">5000 Р.</button>
+          </div>
+        </article>
+        <article class="item">
+          <div class="browser"></div>
+          <a href="#"><img src="img/catalog-item-4.jpg" alt=""></a>
+          <div class="hidden">
+            <h4><a href="#">Modern Organic <br>THAI</a></h4>
+            <p>Сайт для ресторана <br>быстрого питания</p>
+            <button type="button" class="btn">12000 Р.</button>
+          </div>
+        </article>
+        <article class="item">
+          <div class="browser"></div>
+          <a href="#"><img src="img/catalog-item-5.jpg" alt=""></a>
+          <div class="hidden">
+            <h4><a href="#">AVENUE</a></h4>
+            <p>Макет для блога <br>о путешествиях</p>
+            <button type="button" class="btn">8000 Р.</button>
+          </div>
+        </article>
+        <article class="item">
+          <div class="browser"></div>
+          <a href="#"><img src="img/catalog-item-6.jpg" alt=""></a>
+          <div class="hidden">
+            <h4><a href="#">DOVETAIL</a></h4>
+            <p>Интернет-магазин <br>с галереей товаров</p>
+            <button type="button" class="btn">8000 Р.</button>
+          </div>
+        </article>
+        <article class="item">
+          <div class="browser"></div>
+          <a href="#"><img src="img/catalog-item-6.jpg" alt=""></a>
+          <div class="hidden">
+            <h4><a href="#">DOVETAIL</a></h4>
+            <p>Интернет-магазин <br>с галереей товаров</p>
+            <button type="button" class="btn">8000 Р.</button>
+          </div>
+        </article>
+        <article class="item">
+          <div class="browser"></div>
+          <a href="#"><img src="img/catalog-item-6.jpg" alt=""></a>
+          <div class="hidden">
+            <h4><a href="#">DOVETAIL</a></h4>
+            <p>Интернет-магазин <br>с галереей товаров</p>
+            <button type="button" class="btn">8000 Р.</button>
+          </div>
+        </article>
+        <article class="item">
+          <div class="browser"></div>
+          <a href="#"><img src="img/catalog-item-6.jpg" alt=""></a>
+          <div class="hidden">
+            <h4><a href="#">DOVETAIL</a></h4>
+            <p>Интернет-магазин <br>с галереей товаров</p>
+            <button type="button" class="btn">8000 Р.</button>
+          </div>
+        </article>
+      </div>
       <div class="paginator">
         <a href="#" class="current">1</a>
         <a href="#">2</a>
         <a href="#">3</a>
-        ><a href="#">СЛЕДУЮЩАЯ</a>
+        <a href="#">СЛЕДУЮЩАЯ</a>
         </ul>
       </div>
     </section>
   </main>
   <footer class="main-footer">
     <div class="map">
-      <div class="map-adaptive"></div>
-      <div class="address">
-        <h4>NЁRDS DESIGN STUDIO</h4>
-        <p>191186, Санкт-Петербург,
-          ул. Б. Конюшенная, д. 19/8<br />
-          тел. +7 (812) 275-75-75</p>
-        <button type="button" class="btn">НАПИШИТЕ НАМ</button>
+      <div class="map-adaptive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1998.6068850692152!2d30.320580416081988!3d59.93866508187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAg0YPQuy4g0JEuINCa0L7QvdGO0YjQtdC90L3QsNGPLCDQtC4gMTkvOA!5e0!3m2!1sru!2sua!4v1487969839229" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="address">
+          <h4>NЁRDS DESIGN STUDIO</h4>
+          <p>191186, Санкт-Петербург,
+            ул. Б. Конюшенная, д. 19/8<br />
+            тел. +7 (812) 275-75-75</p>
+          <a href="#" class="btn">НАПИШИТЕ НАМ</a>
+        </div>
+        <div class="contact-form">
+          <form action="" method="post">
+            <label for="name">Ваше имя:</label> <label for="email">Ваш e-mail:</label><br>
+            <input type="text" name="" id="name" placeholder="Представьтесь, пожалуйста">
+            <input type="email" id="email" placeholder="Для отправки ответа"><br>
+            <label for="" id="text">Текст письма:</label><br>
+            <textarea name="" id="text" cols="30" rows="10" placeholder="В свободной форме"></textarea><br>
+            <button type="button" class="btn">ОТПРАВИТЬ</button>
+          </form>
+        </div>
       </div>
-    </div>
-    <div class="contact-form">
-      <form action="" method="post">
-        <label for="name">Ваше имя:</label>
-        <input type="text" name="" id="name" placeholder="Представьтесь, пожалуйста">
-        <label for="email">Ваш e-mail:</label>
-        <input type="email" id="email" placeholder="Для отправки ответа">
-        <label for="" id="text">Текст письма:</label>
-        <textarea name="" id="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-        <button type="button" class="btn">ОТПРАВИТЬ</button>
-      </form>
     </div>
     <div class="centerfix">
       <div class="footer-social">
@@ -200,10 +204,8 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
       <div class="footer-copyright">
-        <p>designed by</p>
-        <a href="https://htmlacademy.ru" class="btn">HTML Academy</a>
-        <p>created by</p>
-        <a href="https://iriyamak.github.io" class="btn">Iryna Makarova</a>
+        <p>designed by <a href="https://htmlacademy.ru">HTML Academy</a></p>
+        <p>created by <a href="https://iriyamak.github.io">Iryna Makarova</a></p>
       </div>
     </div>
   </footer>

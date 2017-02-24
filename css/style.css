@@ -1,57 +1,3 @@
-/* --------------- reset.css --------------- */
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;                               /* обнуляем отступы и убираем бордюры */
-	vertical-align: baseline;          /* приводим все к одной базовой линии */
-	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
-	font-size: 100%;                     /* размер шрифта всем одинаковый */
-}
-	a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
-		margin:0;
-		padding:0;
-		font-size:100%;
-		vertical-align:baseline;
-		background:transparent;
-		outline:none;
-	}
-	table {						/* устраняем отступы между ячейками таблицы */
-		border-collapse: collapse;
-		border-spacing: 0;
-	}
-	td, td, img {
-		vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
-	}
-	input, select, button, textarea {
-		margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
-		font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
-		outline: none;
-	}
-	input[type="text"], input[type="password"], textarea {
-		padding: 0; 				/* убираем внутренние отступы для текстовых полей */
-	}
-	input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
-		vertical-align: bottom;
-	}
-	input[type="radio"] {
-		vertical-align: text-bottom;
-	}
-	sub {
-		vertical-align: sub;
-		font-size: smaller;
-	}
-	sup {
-		vertical-align: super;
-		font-size: smaller;
-	}
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-		display:block;
-	}
-	ul {
-		 list-style:none;
-	}
-/* --------------- базовые настройки ---------*/
 html {
 	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
 }
@@ -63,6 +9,10 @@ html {
 		font-family: 'PT Sans Narrow', sans-serif;
 		font-size: 14px;
 		line-height: 24px;
+	}
+	ul{
+		list-style-type: none;
+		padding: 0;
 	}
 	a, a:visited { /* порядок правил для ссылок имеет значение */
 		text-decoration: none;
@@ -76,43 +26,191 @@ html {
 		max-width:100%;
 	}
 	.centerfix{
-		max-width: 880px;
+		max-width: 900px;
+		padding: 0 10px;
 		margin: 0 auto;
 	}
-/* --------------- базовые настройки ---------*/
-h1{
-	font-size: 40px;
+header{
+	background-color: #eee;
 }
-h2 {
-	font-size: 36px;
-	line-height: 36px;
+	.header-top{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+		.main-menu ul{
+			display: flex;
+		}
+		.user-block{
+			display: flex;
+		}
+	.slider img{
+		width:100%;
+	}
+		.slider ul li{
+		position: relative;
+		/*чтобы небыло снизу белой полосы*/
+		}
+		.slide-text-wrapper{
+		position: absolute;
+		max-width: 470px;
+		top: 10%;
+		left:0;
+		}
+		.unslider-nav{/* кнопки навгации при дефолте видны только в панели разработчика - проявим их явно*/
+			margin: -20px auto 0 auto; /*чтобы не было белого отступа после слайдера*/
+			position: relative;
+			top: -18px; /*чтобы поднять повыше*/
+		}
+			.unslider-nav ol {
+			  list-style: none;
+			  text-align: center;
+			}
+			.unslider-nav ol li {
+			  display: inline-block;
+			  width: 11px;
+			  height: 11px;
+			  margin: 0 4px;
+			  background: transparent;
+			  border-radius: 10px;
+			  overflow: hidden;
+			  text-indent: -999em;
+			  border: 1px solid #fff;
+			  cursor: pointer;
+			}
+			.unslider-nav ol li.unslider-active {
+				width: 15px;
+			  height: 15px;
+				background: #4bcaff;
+			  border: 1px solid #4bcaff;
+			  cursor: default;
+			}
+.features{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #eee;
 }
-p{
-	font-size: 16px;
-	line-height: 22px;
-	color:#283136;
+	.feature-item{
+		width: 26.7%
+	}
+	.feature-icon{
+		width: 100%;
+	}
+.content-index{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #eee;
 }
-b {
-	font-size: 18px;
-	line-height: 30px;
+	.content-index li{
+ 		background: url(../img/list-img.jpg) left center no-repeat;
+ 		padding-left: 35px;
+	}
+	.content-index-right{
+	width: 26.7%;
+	}
+	.content-index-left{
+		width: 63.9%;
+	}
+.logo{
+	align-items: center;
 }
-/* --------------- shop ---------*/
+	.map{}
+		.map-adaptive{/* метод для размещения любого контента адаптивною Св-ва для родителя*/
+			position: relative;
+			padding-bottom: 34.5%; /*высота/ширина*100%*/
+			height: 0;
+			overflow: hidden;
+		}
+			.map-adaptive iframe{ /*Св-ва для встариваемого контента*/
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+			}
+		.address{
+			position: absolute;
+			left:18%;
+			top: 18%;
+			background-color: #fff;
+		}
+		.contact-form{
+			position: absolute;
+			width: 70%;
+			background-color: #fff;
+			top:-3%;
+			left:13.8%;
+		}
+footer .centerfix{
+	display: flex;
+	justify-content: space-between;
+}
 
-a.arrow {
-    display: inline-block;
-    margin: 0 10px;
-    font-size:0;
+
+
+/* --------------- shop ---------*/
+.catalog{
+	display: flex;
+	justify-content: space-between;
 }
-.arrow::before {
-    content: "";
-    border: 20px solid #0074d9;
-    border-right-width: 10px;
-    border-left-width: 10px;
-    border-right-color: transparent;
-    border-left-color: transparent;
-    display:inline-block;
+	aside{
+		width: 26.7%;
+	}
+	section{
+		width: 62.2%;
+		display: flex;
+		flex-direction: column;
+	}
+		.sort{
+			display: flex;
+			justify-content: space-between;
+		}
+			a.arrow {
+		    display: inline-block;
+		    margin: 0 3px;
+		    font-size:0;
+			}
+				.arrow::before {
+				   content: "";
+				   border: 10px solid #00ca74;
+				   border-right-width: 5px;
+				   border-left-width: 5px;
+				   border-right-color: transparent;
+				   border-left-color: transparent;
+				   display:inline-block;
+				}
+				.arrow-up::before {
+					border-top-width:0;
+				}
+				.arrow-down::before {
+					border-bottom-width:0;
+				}
+		.catalog-list{
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+			.item{
+				width: 42.9%;
+				display: flex;
+				flex-direction: column;
+			}
+		.paginator a{
+		    display: inline-block;
+		    min-width: 20px;
+		    height: 40px;
+		    padding: 0 10px;
+		    line-height: 40px;
+		    text-align: center;
+		    vertical-align: middle;
+		    text-decoration: none;
+		    font-weight: bold;
+		    color: white;
+		    background: #95a5a6;
+			}
+			.paginator .current {
+	background-color: #16a085;
 }
-.arrow-up::before {border-top-width:0;
-}
-.arrow-down::before {border-bottom-width:0;
+.paginator a:hover {
+    background-color: #2ecc71;
 }
